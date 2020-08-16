@@ -7,7 +7,7 @@ The backend application for an e-commerce website that uses the latest technolog
 
 * [`Installation`](#installation)
 * [`Technologies`](#technologies)
-* [`Walkthrough Videos`](#walkthrough videos)
+* [`Walkthrough`](#walkthrough)
 * [`Deployment`](#deployment)
 * [`Questions`](#questions)
 
@@ -20,7 +20,7 @@ The backend application for an e-commerce website that uses the latest technolog
 * Sequilize
 * Insomnia
 
-## Walkthrough Videos
+## Walkthrough
 GET ALL Categories:
 ![GET ALL]()
 
