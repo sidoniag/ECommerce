@@ -20,6 +20,7 @@ The backend application for an e-commerce website that uses the latest technolog
 * Sequilize
 * Insomnia
 
+## Walkthrough Videos
 GET ALL Categories:
 ![GET ALL]()
 
