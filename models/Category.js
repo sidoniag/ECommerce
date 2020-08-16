@@ -28,4 +28,3 @@ Category.init(
 );
 
 module.exports = Category;
-© 2020 GitHub, Inc.
