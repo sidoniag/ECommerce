@@ -52,9 +52,9 @@ router.post('/', (req, res) => {
   */
   Product.create({
     product_name: req.body.product_name,
-    price:
-    stock: 
-    tagIds: []
+    price: req.params.price,
+    stock: req.params.stock,
+    tagIds: req.params.tagIds,
   })
   Product.create(req.body)
     .then((product) => {
