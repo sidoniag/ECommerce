@@ -1,95 +1,59 @@
 const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
-// The `/api/categories` endpoint
-
+// find all categories
+// be sure to include its associated Products
 router.get('/', (req, res) => {
-  // find all categories
-  // be sure to include its associated Products
   Category.findAll({
-    // attributes:
+    include: [Product],
   })
-    .then(dbEcommerce => res.json(dbEcommerce))
+    .then((categories) => res.json(categories))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
 });
-
+  
+// find one category by its `id` value
+// be sure to include its associated Products
 router.get('/:id', (req, res) => {
-  // find one category by its `id` value
-  // be sure to include its associated Products
   Category.findOne({
-    // attributes: {},
     where: {
       id: req.params.id
-    }
+    },
+    include: [Product],
   })
-    .then(dbEcommerce => {
-      if (!dbEcommerce) {
-        res.status(404).json({ message: 'No category found with that name'});
-        return;
-      }
-      res.json(dbEcommerce);
-    })
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
+    .then((category) => res.json(category))
+    .catch((err) => res.status(400).json(err));
 });
 
+// create a new category
 router.post('/', (req, res) => {
-  // create a new category
-  Category.create({
-    id: req.body.id,
-    category_name: req.body.category_name,
-  })
-  .then(dbEcommerce => res.json(dbEcommerce))
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  });
+  Category.create(req.body)
+    .then((category) => res.status(200).json(category))
+    .catch((err) => res.status(400).json(err));
 });
 
+// update a category by its `id` value
 router.put('/:id', (req, res) => {
-  // update a category by its `id` value
   Category.update(req.body, {
-    individualHooks: true,
     where: {
       id: req.params.id
-    }
+    },
   })
-    .then(dbEcommerce => {
-      if (!dbEcommerce[0]) {
-        res.status(404).json({ message: 'No category found with that name'});
-        return;
-      }
-      res.json(dbEcommerce);
-    })
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
+    .then((category) => res.status(200).json(category))
+    .catch((err) => res.status(400).json(err));
 });
 
+// delete a category by its `id` value
 router.delete('/:id', (req, res) => {
-  // delete a category by its `id` value
   Category.destroy({
     where: {
       id: req.params.id
-    }
+    },
   })
-    .then(dbEcommerce => {
-      if(!dbEcommerce) {
-        res.status(404).json({ message: 'No category found with this name'});
-        return;
-      }
-      res.json(dbEcommerce);
-    })
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
+    .then((category) => res.status(200).json(category))
+    .catch((err) => res.status(400).json(err));
 });
 
 module.exports = router;
