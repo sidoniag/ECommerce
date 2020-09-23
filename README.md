@@ -20,15 +20,16 @@ The backend application for an e-commerce website that uses the latest technolog
 * Sequilize
 * Insomnia
 
-## Walkthrough
-GET ALL Categories:
-![GET ALL]()
+## Walkthroughs
 
-GET Single Category:
-![GET Single]()
+GET ALL:
+<iframe src="https://drive.google.com/file/d/1bP0RTLlTngYnqMBTT-rxpDtzArFxEekH/preview" width="640" height="480"></iframe>
+
+GET by ID:
+<iframe src="https://drive.google.com/file/d/1dND1V39aDy55bYKH5KqsDmBwqp1F4_aX/preview" width="640" height="480"></iframe>
 
 POST | PUT | DELETE: 
-![POST PUT DELETE]()
+<iframe src="https://drive.google.com/file/d/1RypbAbmJiZsuE54UJyKMKlR3XX9VCu3E/preview" width="640" height="480"></iframe>
 
 ## Deployment
 
