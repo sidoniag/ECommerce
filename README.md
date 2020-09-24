@@ -23,13 +23,13 @@ The backend application for an e-commerce website that uses the latest technolog
 ## Walkthroughs
 
 GET ALL:
-! [GET ALL Demo] (./assets/GET_ALL.gif)
+![GET ALL Demo](./assets/GET_ALL.gif)
 
 GET by ID:
 ![GET BY ID Demo](./assets/GET_ID.gif)
 
 POST | PUT | DELETE: 
-![POST, PUT, DELETE Demo](./assets/POST_PUT_DELETE.gif)
+![POST PUT DELETE Demo](./assets/POST_PUT_DELETE.gif)
 
 ## Deployment
 
