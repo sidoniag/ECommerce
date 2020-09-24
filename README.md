@@ -22,14 +22,14 @@ The backend application for an e-commerce website that uses the latest technolog
 
 ## Walkthroughs
 
-GET ALL:
 ![GET ALL Demo](./assets/GET_ALL.gif)
+GET ALL:
 
-GET by ID:
 ![GET BY ID Demo](./assets/GET_ID.gif)
+GET by ID:
 
-POST | PUT | DELETE: 
 ![POST PUT DELETE Demo](./assets/POST_PUT_DELETE.gif)
+POST | PUT | DELETE: 
 
 ## Deployment
 
