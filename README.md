@@ -23,6 +23,7 @@ The backend application for an e-commerce website that uses the latest technolog
 ## Walkthroughs
 
 GET ALL:
+[![Get all demo](doc/screenshot_youtube.PNG)](https://drive.google.com/file/d/1bP0RTLlTngYnqMBTT-rxpDtzArFxEekH/preview)
 <iframe src=(https://drive.google.com/file/d/1bP0RTLlTngYnqMBTT-rxpDtzArFxEekH/preview) width="640" height="480"></iframe>
 
 GET by ID:
