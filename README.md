@@ -23,14 +23,13 @@ The backend application for an e-commerce website that uses the latest technolog
 ## Walkthroughs
 
 GET ALL:
-[![Get all demo](doc/screenshot_youtube.PNG)](https://drive.google.com/file/d/1bP0RTLlTngYnqMBTT-rxpDtzArFxEekH/preview)
-<iframe src=(https://drive.google.com/file/d/1bP0RTLlTngYnqMBTT-rxpDtzArFxEekH/preview) width="640" height="480"></iframe>
+![GET ALL Demo](./assets/GET ALL - categories,products,tags.gif)
 
 GET by ID:
-<iframe src="https://drive.google.com/file/d/1dND1V39aDy55bYKH5KqsDmBwqp1F4_aX/preview" width="640" height="480"></iframe>
+![GET BY ID Demo](./assets/GET by ID - categories,products,tags.gif)
 
 POST | PUT | DELETE: 
-<iframe src="https://drive.google.com/file/d/1RypbAbmJiZsuE54UJyKMKlR3XX9VCu3E/preview" width="640" height="480"></iframe>
+![POST, PUT, DELETE Demo](./assets/POST, PUT, DELETE - categories.gif)
 
 ## Deployment
 
