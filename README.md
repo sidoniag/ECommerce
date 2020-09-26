@@ -22,6 +22,8 @@ The backend application for an e-commerce website that uses the latest technolog
 
 ## Walkthroughs
 
+START UP: <br>
+
 GET ALL: <br>
 ![GET ALL Demo](./assets/GET_ALL.gif)
 
